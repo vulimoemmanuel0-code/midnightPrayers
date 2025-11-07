@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>membership registration</title>
+        <h1>    member registration</h1>
+        <style>
+            body{
+               background-color: lightblue;
+                color: 000;
+                font-family: Arial, Helvetica, sans-serif;
+                width: 300px;
+                border: 3px solid green;
+            }
+            
+
+            h1{
+                color:black;
+                background: green;  
+            }
+            form{
+                display:grid;
+             
+                padding: 10px;
+                margin: 5px;
+                gap: 6px;
+                border-radius: 2px;
+                border-color: blueviolet;
+                
+
+            }
+         
+            
+            label{
+                font-weight: bolder;
+             
+            }
+            input[type="text"],
+            input[type="text"],
+            input[type="email"]{
+                padding: 11px;
+                border-radius: 2px;
+                border:2px solid black
+            }
+            button{
+                background-color: rgba(19, 227, 82, 0.938);
+                border: none;
+                 border-radius:5px ;
+                 color: rgb(211, 19, 19); 
+                 padding: 10px;
+                 margin:10px;
+                 cursor: pointer;
+
+            }
+            button:hover{
+                background-color: blue;
+            }
+         
+            
+            
+            
+        </style>
+      
+    </head>
+   
+    <body>
+        
+        <form action="save.php" method="post" >
+   <label for="FIRST NAME">FIRST NAME</label>
+            <input type="text" id="FIRST NAME" placeholder="Vulimo"required>
+            <label for="MIDDLE NAME">MIDDLE NAME</label>
+            <input type="text" id="MIDDLE NAME" placeholder="Emmanuel" required>
+            <label for="LAST NAME">LAST NAME</label>
+            <input type="text" id="LAST NAME" placeholder="Muloli" required>
+            <label for="PHONE NUMBER">PHONE NUMBER</label>
+            <input type="text" id="PHONE NUMBER" placeholder="0798862497" required>
+            <label for="EMAIL ADDRESS">EMAIL ADDRESS</label>
+            <input type="email" id="EMAIL ADDRESS" placeholder="vulimoemmanuel0@gmail.com">
+            <label for="GENDER">GENDER</label>
+                                 <label for="male" class="radio-inline"><input type="radio" id="male" name="gender">Male</label>
+                        <label for="female" class="radio-inline"><input type="radio" id="female" name="gender">Female</label>
+                        <label for="other" class="radio-inline"><input type="radio" id="other" name="gender">Other</label>
+           
+          <label for="HOW DID YOU KNOW OUR GROUP">HOW DID YOU KNOW OUR GROUP</label>
+         <select name="HOW DID YOU KNOW OUR GROUP" id="HOW DID YOU KNOW OUR GROUP">
+          <option value="social media">social media</option>
+          <option value="from our website">from our website</option>
+          <option value="from a friend">from a friend</option>
+          </select><br><br>
+            <label for="">ARE BORN AGAIN?</label>
+            <label for="YES" class="radio-inline"> <input type="radio" name="bornagain" id="YES">YES</label>
+            <label for="NO" class="radio-inline"> <input type="radio" name="bornagain" id="NO">NO</label>
+            
+            <label for="COUNTY">COUNTY</label>
+            <input type="text" id="COUNTY" placeholder="Bungoma">
+            <label for="HOME TOWN">HOME TOWN</label>
+            <input type="text" placeholder="Naitiri" id="HOME TOWN">
+            <label for="">YOUR PHOTO</label>
+            <input type="file" accept="20kb">
+               
+
+            <button >SUBMIT</button>
+       
+           
+        </form>
+    </body>
+</html>
